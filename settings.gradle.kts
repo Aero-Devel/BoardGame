@@ -8,4 +8,4 @@
  */
 
 rootProject.name = "BoardGame"
-include("app", "list", "utilities")
+include("app")
