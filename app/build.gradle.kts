@@ -26,6 +26,14 @@ repositories {
 }
 
 dependencies {
+
+    // https://mvnrepository.com/artifact/org.jboss.xnio/xnio-api
+    implementation("org.jboss.xnio:xnio-api:3.8.5.Final")
+    implementation(platform("org.http4k:http4k-bom:4.17.6.0"))
+    implementation("org.http4k:http4k-core")
+    implementation("org.http4k:http4k-server-undertow")
+    implementation("org.http4k:http4k-client-apache")
+
     // Align versions of all Kotlin components
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
 
