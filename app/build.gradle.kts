@@ -26,8 +26,9 @@ repositories {
 }
 
 dependencies {
-
-    // https://mvnrepository.com/artifact/org.jboss.xnio/xnio-api
+//app/src/main/kotlin/BoardGame/App.kt
+ 
+// https://mvnrepository.com/artifact/org.jboss.xnio/xnio-api
     implementation("org.jboss.xnio:xnio-api:3.8.5.Final")
     implementation(platform("org.http4k:http4k-bom:4.17.6.0"))
     implementation("org.http4k:http4k-core")
@@ -49,6 +50,11 @@ dependencies {
     // Use the Kotlin JUnit integration.
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 }
+
+application {
+    mainClass.set("AppKt") 
+}
+
 
 tasks.jar {
     manifest {
